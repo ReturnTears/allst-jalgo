@@ -89,7 +89,7 @@ public class StoreArrToDisk {
     }
 
     public static void main(String[] args) {
-        obtainFromDisk("E:\\TestData\\map.txt");
+        obtainFromDisk(filePath);
     }
 
 }
