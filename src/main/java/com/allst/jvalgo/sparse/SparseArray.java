@@ -1,7 +1,5 @@
 package com.allst.jvalgo.sparse;
 
-import java.util.Arrays;
-
 /**
  * 稀疏数组
  * @author YiYa
@@ -17,6 +15,10 @@ public class SparseArray {
 
     public static void main(String[] args) {
         int[][] sparseArr = originToSparseArray();
+
+        // 保存稀疏数组
+        StoreArrToDisk.storeToDisk(sparseArr);
+
         sparseToArray(sparseArr);
     }
 
