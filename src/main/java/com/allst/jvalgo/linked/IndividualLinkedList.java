@@ -16,10 +16,16 @@ public class IndividualLinkedList {
 
         // 创建链表
         SingleLinkedList linkedList = new SingleLinkedList();
-        linkedList.add(node1);
+        /*linkedList.add(node1);
         linkedList.add(node4);
         linkedList.add(node3);
-        linkedList.add(node2);
+        linkedList.add(node2);*/
+
+        // 测试按顺序添加
+        linkedList.addByOrder(node1);
+        linkedList.addByOrder(node4);
+        linkedList.addByOrder(node3);
+        linkedList.addByOrder(node2);
 
         // 显示
         linkedList.list();
@@ -53,6 +59,39 @@ class SingleLinkedList {
         }
         // 退出while循环时，temp指向链表最后, 将最后这个节点的next指向新的节点即完成的添加
         temp.next = personNode;
+    }
+
+    /**
+     * 有序添加节点到单链表
+     * 如果有这个排名则添加失败并给出提示
+     * @param personNode 对象
+     */
+    public void addByOrder (PersonNode personNode) {
+        // head节点不能动， 我们需要通过一个辅助变量来帮助找到添加的位置
+        // 因为单链表， 我们找的temp时需要位于添加位置的前一个节点， 否则插入不了
+        PersonNode temp = head;
+        boolean flag = false;   // 标识添加的编号是否存在， 默认false
+        while (true) {
+            if (temp.next == null) {    // temp在链表最后
+                break;
+            }
+            if (temp.next.no > personNode.no) { // 插入位置找到了， 就在temp的后面插入
+                break;
+            } else if (temp.next.no == personNode.no) { // 说明希望添加的Node节点的编号已存在
+                flag = true;    // 编号存在
+                break;
+            }
+            // 都不符合条件时，后移
+            temp = temp.next;
+        }
+        // 判断flag的值
+        if (flag) {
+            System.out.printf("待插入Node的编号: %d 已存在， 不能添加\n", personNode.no);
+        } else {
+            //插入到链表中， temp的后面
+            personNode.next = temp.next;
+            temp.next = personNode;
+        }
     }
 
     /**
