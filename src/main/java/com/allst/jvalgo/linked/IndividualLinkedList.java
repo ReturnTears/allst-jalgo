@@ -29,6 +29,18 @@ public class IndividualLinkedList {
 
         // 显示
         linkedList.list();
+
+        // 修改
+        PersonNode node5 = new PersonNode(2, "李四修改", "Lsxg");
+        linkedList.update(node5);
+        System.out.println("修改后~~~");
+        linkedList.list();
+
+        // 删除
+        linkedList.delete(1);
+        linkedList.delete(4);
+        System.out.println("删除后~~~");
+        linkedList.list();
     }
 
 }
@@ -91,6 +103,67 @@ class SingleLinkedList {
             //插入到链表中， temp的后面
             personNode.next = temp.next;
             temp.next = personNode;
+        }
+    }
+
+    /**
+     * 修改节点，根据no来修改
+     * @param personNode    对象
+     */
+    public void update (PersonNode personNode) {
+        // 判断链表是否为空
+        if (head.next == null) {
+            System.out.println("链表为空~");
+            return;
+        }
+        // head节点不能动， 需要通过一个辅助变量
+        PersonNode temp = head;
+        boolean flag = false;
+        while (true) {
+            if (temp.next == null) {    // 表示遍历完链表
+                break;
+            }
+            if (temp.no == personNode.no) {
+                flag = true;    // 找到该节点
+                break;
+            }
+            temp = temp.next;
+        }
+        // 判断是否找到对应的节点
+        if (flag) {
+            temp.name = personNode.name;
+            temp.nickName = personNode.nickName;
+        } else {
+            System.out.printf("待修改的no = %d 未找到， 不能修改~~~\n", personNode.no);
+        }
+    }
+
+    /**
+     * 删除Node
+     * @param no    通过no删除Node
+     */
+    public void delete (int no) {
+        if (head.next == null) {
+            System.out.printf("链表为空， 不能删除节点 %d", no);
+            return;
+        }
+        PersonNode temp = head;
+        boolean flag = false;
+        while (true) {
+            if (temp == null) { // 遍历完链表
+                break;
+            }
+            if (temp.next.no == no) {   // 找到当前待删除Node的上一节点
+                flag = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        // 判断是否找到对应的节点
+        if (flag) {
+            temp.next = temp.next.next;
+        } else {
+            System.out.printf("待删除的no = %d 不存在， 不能删除~~\n", no);
         }
     }
 
