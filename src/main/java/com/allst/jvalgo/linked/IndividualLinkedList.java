@@ -172,6 +172,16 @@ public class IndividualLinkedList {
             System.out.println(stack.pop());
         }
     }
+
+    /**
+     * 合并两个有序的链表，合并之后的链表依然有序
+     * 思路：
+     * 类似链表反转，新建一个链表，比较两个链表中那个节点较小就存入到新链表中
+     *
+     */
+    public static void combineList() {
+
+    }
 }
 
 /**
