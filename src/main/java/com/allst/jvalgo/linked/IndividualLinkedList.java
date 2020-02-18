@@ -1,5 +1,7 @@
 package com.allst.jvalgo.linked;
 
+import java.util.Stack;
+
 /**
  * 单链表
  * @author YiYa
@@ -20,6 +22,12 @@ public class IndividualLinkedList {
         reversalList.add(node4);
         reversalList.add(node3);
         reversalList.add(node2);
+
+        // 单链表逆序打印
+        reversalList.list();
+        System.out.println("单链表逆序打印, 没有改变链表的结构~~~");
+        reversaPrint(reversalList.getHead());
+        System.out.println();
 
         // 单链表反转
         reversalList.list();
@@ -139,6 +147,30 @@ public class IndividualLinkedList {
         }
         // 将head.next指向reversalHead.next实现单链表的反转
         head.next = reversalHead.next;
+    }
+
+    /**
+     * 将单链表逆序打印
+     * @param head      节点对象
+     */
+    public static void reversaPrint(PersonNode head) {
+        // 链表为空
+        if (head.next == null) {
+            return;
+        }
+        // 创建一个栈，将各个节点压入栈中
+        Stack<PersonNode> stack = new Stack<>();
+        // 定义一个辅助变量，用于遍历原来的链表
+        PersonNode temp = head.next;
+        // 遍历链表将所有节点压入栈中
+        while (temp != null) {
+            stack.push(temp);
+            temp = temp.next;
+        }
+        // 出栈
+        while (stack.size() > 0) {
+            System.out.println(stack.pop());
+        }
     }
 }
 
