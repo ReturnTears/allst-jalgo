@@ -15,12 +15,22 @@ public class IndividualLinkedList {
         PersonNode node4 = new PersonNode(4, "马六", "Ml");
 
         // 创建链表
-        SingleLinkedList linkedList = new SingleLinkedList();
-        /*linkedList.add(node1);
-        linkedList.add(node4);
-        linkedList.add(node3);
-        linkedList.add(node2);*/
+        SingleLinkedList reversalList = new SingleLinkedList();
+        reversalList.add(node1);
+        reversalList.add(node4);
+        reversalList.add(node3);
+        reversalList.add(node2);
 
+        // 单链表反转
+        reversalList.list();
+        reversalList(reversalList.getHead());
+        System.out.println("单链表反转~~~");
+        reversalList.list();
+        System.out.println();
+
+
+        // 创建链表
+        SingleLinkedList linkedList = new SingleLinkedList();
         // 测试按顺序添加
         linkedList.addByOrder(node1);
         linkedList.addByOrder(node4);
@@ -101,6 +111,35 @@ public class IndividualLinkedList {
         return temp;
     }
 
+    /**
+     * 将单链表反转
+     * @param head  节点对象
+     */
+    public static void reversalList(PersonNode head) {
+        // 链表为空或者链表只有有一个节点， 无需反转， 之恶极返回
+        if (head.next == null || head.next.next == null) {
+            return;
+        }
+        // 定义一个辅助变量，用于遍历原来的链表
+        PersonNode temp = head.next;
+        // 指向当前节点的下一节点
+        PersonNode next = null;
+        // 定义一个新的头节点
+        PersonNode reversalHead = new PersonNode(0, "", "");
+        // 重点: 遍历原来的链表， 每遍历一个节点就将其取出，并放在新的链表的最前端
+        while (temp != null) {
+            // 先暂存当前节点的下一节点，后面需要用到，若不保存则相当于遍历时链表断掉
+            next = temp.next;
+            // 将temp的下一节点指向新的链表的最前端
+            temp.next = reversalHead.next;
+            // 将temp连接到新的链表上
+            reversalHead.next = temp;
+            // 让temp后移
+            temp = next;
+        }
+        // 将head.next指向reversalHead.next实现单链表的反转
+        head.next = reversalHead.next;
+    }
 }
 
 /**
