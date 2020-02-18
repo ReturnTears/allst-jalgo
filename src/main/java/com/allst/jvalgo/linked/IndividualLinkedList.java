@@ -41,6 +41,64 @@ public class IndividualLinkedList {
         linkedList.delete(4);
         System.out.println("删除后~~~");
         linkedList.list();
+
+        // 有效节点数
+        System.out.printf("单链表中有效节点个数为: %d\n", getEffectivityNodeSize(linkedList.getHead()));
+
+        // 倒数第index个节点
+        PersonNode node = getNodeLastIndex(linkedList.getHead(), 1);
+        System.out.println("倒数第1个节点为: " + node);
+    }
+
+    /**
+     * 获取有效节点数，如果是带头节点的链表统计时，不需要统计头节点
+     * @param node      节点对象
+     * @return 节点数
+     */
+    public static int getEffectivityNodeSize(PersonNode node) {
+        if (node.next == null) {
+            System.out.println("链表为空~~~~");
+            return 0;
+        }
+        // 定义一个temp变量
+        PersonNode temp = node.next;
+        int size = 0;
+        while (temp != null) {
+            size++;
+            temp = temp.next;   // 遍历
+        }
+        return size;
+    }
+
+    /**
+     * 获取链表中倒数第index个节点
+     * 思路：
+     * 1、遍历节点有效个数size， 可以直接调用方法: getEffectivityNodeSize
+     * 2、size - index表示所求节点
+     *
+     * @param head      head节点
+     * @param index     倒数第index
+     * @return          节点对象
+     */
+    public static PersonNode getNodeLastIndex(PersonNode head, int index) {
+        if (head.next == null) {
+            System.out.println("连接为空~~~");
+            return null;
+        }
+        // 获取节点有效数
+        int size = getEffectivityNodeSize(head);
+        // 校验index
+        if (index <= 0 || index > size) {
+            System.out.printf("传递的参数%d不合理\n", index);
+            return null;
+        }
+        // 定义辅助变量
+        PersonNode temp = head.next;
+        // for循环定位倒数的节点
+        for (int i = 0; i < size - index; i++) {
+            temp = temp.next;
+        }
+        return temp;
     }
 
 }
@@ -51,6 +109,10 @@ public class IndividualLinkedList {
 class SingleLinkedList {
     // 初始化头节点， 头节点不要修改，他不存放任何数据
     private PersonNode head = new PersonNode(0, "", "");
+
+    public PersonNode getHead() {
+        return head;
+    }
 
     /**
      * 添加节点到单链表
