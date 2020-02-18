@@ -15,3 +15,9 @@ sparse(表示稀疏数组)
 pakage:
 linked
 ```
+
+## 备注
+```text
+1、IDEA格式化快捷键Ctrl+Alt+l
+
+```
