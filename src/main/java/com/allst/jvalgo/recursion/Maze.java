@@ -41,7 +41,7 @@ public class Maze {
         }
 
         // 找路
-        setWay(map, 1, 1);
+        setWay2(map, 1, 1);
         System.out.println("找路地图~~~");
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 7; j++) {
@@ -79,6 +79,34 @@ public class Maze {
                 } else if (setWay(map, i - 1, j)) {     // 向上走
                     return true;
                 } else if (setWay(map, i, j - 1)) {     // 向左走
+                    return true;
+                } else {
+                    map[i][j] = 3;
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }
+    }
+
+    /**
+     * 修改行走策略: 上 -> 右 -> 下 -> 左
+     */
+    public static boolean setWay2(int[][] map, int i, int j) {
+        if (map[6][5] == 2) {
+            return true;
+        } else {
+            if (map[i][j] == 0) {   // 未走过
+                // 按照策略走
+                map[i][j] = 2;      // 假定该点可以通
+                if (setWay2(map, i - 1, j)) {    // 向上走
+                    return true;
+                } else if (setWay2(map, i, j + 1)) {     // 向右走
+                    return true;
+                } else if (setWay2(map, i + 1, j)) {     // 向下走
+                    return true;
+                } else if (setWay2(map, i, j - 1)) {     // 向左走
                     return true;
                 } else {
                     map[i][j] = 3;
