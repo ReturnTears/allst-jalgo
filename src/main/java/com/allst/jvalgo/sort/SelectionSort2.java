@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class SelectionSort2 {
 
     public static void main(String[] args) {
-        int[] arr = {101, 120, 130, 1};
+        int[] arr = {101, 120, 130, 1, -7, 22, 7};
         selection(arr);
     }
 
