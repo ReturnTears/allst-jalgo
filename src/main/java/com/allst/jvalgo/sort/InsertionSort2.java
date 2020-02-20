@@ -22,10 +22,12 @@ public class InsertionSort2 {
      * @param arr 参数
      */
     private static void insetSort(int[] arr) {
+        int insertValue = 0;
+        int insertIndex = 0;
         for (int i = 1; i < arr.length; i++) {
             // 定义待插入的数据
-            int insertValue = arr[i];
-            int insertIndex = i - 1;    // 0 = 1 - 1表达待插入数据的前一个下标位置
+            insertValue = arr[i];
+            insertIndex = i - 1;    // 0 = 1 - 1表达待插入数据的前一个下标位置
             /**
              * condition1(insertIndex >= 0): 表示在给待插入数据找插入位置时不越界
              * condition2(insertValue < arr[insertIndex]): 表示待插入数还没有找到插入位置
