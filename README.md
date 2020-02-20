@@ -28,6 +28,16 @@ package:
 recursion
 ```
 
+## 排序
+```
+package:
+sort
+
+冒泡排序
+
+选择排序
+```
+
 ## 备注
 ```text
 1、IDEA格式化快捷键Ctrl+Alt+l
