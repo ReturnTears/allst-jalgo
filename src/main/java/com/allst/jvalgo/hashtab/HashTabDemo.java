@@ -18,6 +18,7 @@ public class HashTabDemo {
         while (true) {
             System.out.println("add: 添加雇员");
             System.out.println("list: 遍历雇员");
+            System.out.println("find: 查找雇员");
             System.out.println("exit: 退出系统");
             key = scanner.next();
             switch (key) {
@@ -35,13 +36,18 @@ public class HashTabDemo {
                 case "list":
                     tab.list();
                     break;
+                case "find":
+                    System.out.println("请输入要查找的id:");
+                    id = scanner.nextInt();
+                    tab.findBy(id);
+                    break;
                 case "exit":
                     System.out.println("已退出~~~");
                     scanner.close();
                     System.exit(0);
                 default:
                     break;
-           }
+            }
         }
     }
 
@@ -65,7 +71,8 @@ class HashTab {
 
     /**
      * 添加雇员
-     * @param emp   参数
+     *
+     * @param emp 参数
      */
     public void add(Emp emp) {
         int empNo = hashFunc(emp.id);
@@ -82,8 +89,24 @@ class HashTab {
     }
 
     /**
+     *
+     * @param id
+     */
+    public void findBy(int id) {
+        int empListNo = hashFunc(id);
+        Emp emp = empLinkedListArray[empListNo].findById(id);
+        if (emp != null) {
+            System.out.printf("在第%d条链表中找到Emp对象id值为:%d\n", empListNo + 1, id);
+        } else {
+            System.out.println("未找到~~~");
+        }
+
+    }
+
+    /**
      * 自定义散列函数
-     * @return  散列值
+     *
+     * @return 散列值
      */
     private int hashFunc(int id) {
         return id % size;
@@ -128,6 +151,31 @@ class EmpLinkedList {
             currEmp = currEmp.next;
         }
     }
+
+    /**
+     * 根据id查找
+     *
+     * @return 结果
+     */
+    public Emp findById(int id) {
+        if (head == null) {
+            System.out.println("链表为空~~~");
+            return null;
+        }
+        // 辅助指针
+        Emp currEmp = head;
+        while (true) {
+            if (currEmp.id == id) {
+                break;
+            }
+            if (currEmp.next == null) {
+                currEmp = null;
+                break;
+            }
+            currEmp = currEmp.next;
+        }
+        return currEmp;
+    }
 }
 
 /**
@@ -138,6 +186,7 @@ class Emp {
     public String name;
     public int age;
     public Emp next;
+
     // 构造器
     public Emp(int id, String name, int age) {
         this.id = id;
