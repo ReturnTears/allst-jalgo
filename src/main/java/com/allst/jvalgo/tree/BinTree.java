@@ -41,7 +41,23 @@ public class BinTree {
         if (resNode != null) {
             System.out.println("找到~~~: " + resNode);
         } else {
-            System.out.println("没找到~~~");
+            System.out.println("没找到~~~:");
+        }
+
+        System.out.println("中序遍历查找: ");
+        HerosNode resNode2 = tree.midOrder(5);
+        if (resNode2 != null) {
+            System.out.println("找到~~~:: " + resNode);
+        } else {
+            System.out.println("没找到~~~::");
+        }
+
+        System.out.println("后序遍历查找: ");
+        HerosNode resNode3 = tree.postOrder(5);
+        if (resNode3 != null) {
+            System.out.println("找到~~~::: " + resNode);
+        } else {
+            System.out.println("没找到~~~:::");
         }
     }
 
@@ -213,6 +229,7 @@ class HerosNode {
      * @return      结果
      */
     public HerosNode preOrder(int no) {
+        System.out.println("进入前序遍历查找方法~~~");
         // 判断当前节点是否待查找节点
         if (this.no == no) {
             return this;
@@ -246,6 +263,7 @@ class HerosNode {
         if (resNode != null) {
             return resNode;
         }
+        System.out.println("进入中序遍历查找方法~~~");
         if (this.no == no) {
             return this;
         }
@@ -274,6 +292,7 @@ class HerosNode {
         if (resNode != null) {
             return resNode;
         }
+        System.out.println("进入后序遍历查找方法~~~");
         if (this.no == no) {
             return this;
         }
