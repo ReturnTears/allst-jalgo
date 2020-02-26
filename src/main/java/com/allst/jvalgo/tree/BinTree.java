@@ -18,13 +18,17 @@ public class BinTree {
         HerosNode node3 = new HerosNode(3, "妖姬");
         HerosNode node4 = new HerosNode(4, "凤凰");
         HerosNode node5 = new HerosNode(5, "狐狸");
+        HerosNode node6 = new HerosNode(6, "亚索");
+        HerosNode node7 = new HerosNode(7, "剑圣");
 
         // 二叉树应该是递归创建的
 
         root.setLeft(node2);
         root.setRight(node3);
-        node3.setLeft(node5);
-        node3.setRight(node4);
+        node2.setLeft(node5);
+        node2.setRight(node4);
+        node3.setLeft(node6);
+        node3.setRight(node7);
         tree.setRoot(root);
 
         System.out.println("前序遍历: ");
