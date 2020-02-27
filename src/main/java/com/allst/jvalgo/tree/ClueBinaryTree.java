@@ -31,6 +31,10 @@ public class ClueBinaryTree {
         HeroesNode rightNode =node5.getRight();
         System.out.println("10号结点的前驱结点: "  + leftNode); //3
         System.out.println("10号结点的后继结点: "  + rightNode); //1
+
+        // 线索化遍历
+        System.out.println("线索化中序遍历~~~");
+        tree.midClueList();
     }
 
 
@@ -80,6 +84,41 @@ class CLueBinTree {
     public void clueNotes() {
         this.clueNotes(root);
     }
+
+    /**
+     * 前序遍历线索二叉树
+     */
+    public void preClueList() {
+
+    }
+
+    /**
+     * 中序遍历线索化二叉树(不能使用之前的遍历方法了)
+     */
+    public void midClueList() {
+        HeroesNode node = root;
+        while (node != null) {
+            // 循环找到leftType == 1的节点， 中序遍历的首节点
+            while (node.getLeftType() == 0) {
+                node = node.getLeft();
+            }
+            System.out.println(node);
+            while (node.getRightType() == 1) {
+                node = node.getRight();
+                System.out.println(node);
+            }
+            node = node.getRight();
+        }
+
+    }
+
+    /**
+     * 后续遍历线索化二叉树
+     */
+    public void postClueList() {
+
+    }
+
 }
 
 /**
