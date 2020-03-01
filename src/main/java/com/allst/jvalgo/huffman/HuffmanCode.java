@@ -6,6 +6,7 @@ import java.util.*;
 /**
  * 赫夫曼编码
  * contraction: 压缩
+ *
  * @author YiYa
  * @since 2020-03-01 上午 12:09
  */
@@ -37,17 +38,23 @@ public class HuffmanCode {
         // System.out.println("result2 : " + Arrays.toString(encodeResult));
 
         // 压缩文件
-        String srcFile = "E:\\TestData\\ck.jpg";
+        /*String srcFile = "E:\\TestData\\ck.jpg";
         String dstFile = "E:\\TestData\\encodeCk.zip";
-        zipFile(srcFile, dstFile);
-        System.out.println("压缩文件完成~~~");
+        huffmZipFile(srcFile, dstFile);
+        System.out.println("压缩文件完成~~~");*/
+
+        // 解压文件
+        String zipFile = "E:\\TestData\\encodeCk.zip";
+        String dstFile = "E:\\TestData\\ck2.jpg";
+        unHuffmZipFIle(zipFile, dstFile);
+        System.out.println("解压文件成功~~~");
     }
 
     /**
      * 将字符数组转换为节点集合
      *
-     * @param bytes     数组
-     * @return          结果
+     * @param bytes 数组
+     * @return 结果
      */
     private static List<Node> getNodes(byte[] bytes) {
         List<Node> nodes = new ArrayList<>();
@@ -70,8 +77,9 @@ public class HuffmanCode {
 
     /**
      * 创建赫夫曼树
-     * @param nodes     节点集合
-     * @return          结果
+     *
+     * @param nodes 节点集合
+     * @return 结果
      */
     private static Node createHufmTree(List<Node> nodes) {
         while (nodes.size() > 1) {
@@ -96,9 +104,10 @@ public class HuffmanCode {
 
     /**
      * 重写前序遍历
-     * @param root      节点
+     *
+     * @param root 节点
      */
-    private static void preOrder(Node root){
+    private static void preOrder(Node root) {
         if (root != null) {
             root.preOrder();
         } else {
@@ -108,12 +117,13 @@ public class HuffmanCode {
 
     static Map<Byte, String> huffmanCodes = new HashMap<>();
     static StringBuilder resultSb = new StringBuilder();
+
     /**
      * 获取Node的所有叶子节点的赫夫曼编码
      *
-     * @param node      树Node
-     * @param code      路径编码:左边节点为0, 右边节点1
-     * @param sb        用于拼接
+     * @param node 树Node
+     * @param code 路径编码:左边节点为0, 右边节点1
+     * @param sb   用于拼接
      */
     private static void getHuffmCodes(Node node, String code, StringBuilder sb) {
         StringBuilder stringBuilder = new StringBuilder(sb);
@@ -133,8 +143,9 @@ public class HuffmanCode {
 
     /**
      * 重载getHuffmanCodes
-     * @param root      树节点
-     * @return          结果
+     *
+     * @param root 树节点
+     * @return 结果
      */
     private static Map<Byte, String> getHuffmanCodes(Node root) {
         if (root == null) {
@@ -149,9 +160,10 @@ public class HuffmanCode {
 
     /**
      * 将字符串数组通过赫夫曼编码表进行编码
-     * @param bytes         字符串数组
-     * @param huffmanCodes  赫夫曼编码表
-     * @return              结果
+     *
+     * @param bytes        字符串数组
+     * @param huffmanCodes 赫夫曼编码表
+     * @return 结果
      */
     private static byte[] encodeHuffm(byte[] bytes, Map<Byte, String> huffmanCodes) {
         StringBuilder sb = new StringBuilder();
@@ -176,7 +188,7 @@ public class HuffmanCode {
                 strByte = sb.substring(i, i + 8);
             }
             // 将strByte转成一个byte
-            huffmEncode[index] = (byte)Integer.parseInt(strByte, 2);
+            huffmEncode[index] = (byte) Integer.parseInt(strByte, 2);
             index++;
         }
 
@@ -185,8 +197,9 @@ public class HuffmanCode {
 
     /**
      * 封装方法
-     * @param bytes     原始字符串对应的字节数组
-     * @return          是经过赫夫曼编码处理后的字节数组(压缩后数组)
+     *
+     * @param bytes 原始字符串对应的字节数组
+     * @return 是经过赫夫曼编码处理后的字节数组(压缩后数组)
      */
     private static byte[] huffmanZip(byte[] bytes) {
         List<Node> nodes = getNodes(bytes);
@@ -197,9 +210,10 @@ public class HuffmanCode {
 
     /**
      * 将byte转换成二进制字符串
-     * @param flag      标志是否需要补高位，true / false， 如果是最后一个字节无需补高位
-     * @param b         传入的byte
-     * @return          结果
+     *
+     * @param flag 标志是否需要补高位，true / false， 如果是最后一个字节无需补高位
+     * @param b    传入的byte
+     * @return 结果
      */
     private static String byte2BitString(boolean flag, byte b) {
         int temp = b;
@@ -217,9 +231,10 @@ public class HuffmanCode {
 
     /**
      * 对经过赫夫曼编码后的数据进行解码
-     * @param huffmanCodes      赫夫曼编码表
-     * @param huffmanBytes      赫夫曼编码后的字节数组
-     * @return                  结果
+     *
+     * @param huffmanCodes 赫夫曼编码表
+     * @param huffmanBytes 赫夫曼编码后的字节数组
+     * @return 结果
      */
     private static byte[] decodeHuffm(Map<Byte, String> huffmanCodes, byte[] huffmanBytes) {
         StringBuilder sb = new StringBuilder();
@@ -267,10 +282,11 @@ public class HuffmanCode {
 
     /**
      * 使用赫夫曼编码对文件进行压缩
-     * @param srcFile       源文件路径
-     * @param dstFile       压缩文件路径
+     *
+     * @param srcFile 源文件路径
+     * @param dstFile 压缩文件路径
      */
-    private static void zipFile(String srcFile, String dstFile) {
+    private static void huffmZipFile(String srcFile, String dstFile) {
         FileInputStream fis = null;
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -301,6 +317,41 @@ public class HuffmanCode {
                 fis.close();
                 fos.close();
                 oos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * 对经过赫夫曼编码的文件进行解压缩
+     *
+     * @param zipFile 解压文件
+     * @param dstFile 解压后的文件
+     */
+    private static void unHuffmZipFIle(String zipFile, String dstFile) {
+        InputStream is = null;
+        ObjectInputStream ois = null;
+        OutputStream os = null;
+        try {
+            is = new FileInputStream(zipFile);
+            ois = new ObjectInputStream(is);
+            byte[] huffmBytes = (byte[]) ois.readObject();
+            // 读取赫夫曼编码表
+            Map<Byte, String> huffmCodes = (Map<Byte, String>) ois.readObject();
+            // 解码
+            byte[] bytes = decodeHuffm(huffmCodes, huffmBytes);
+            // 将bytes数组写入到目标文件
+            os = new FileOutputStream(dstFile);
+            os.write(bytes);
+
+        } catch (Exception e){
+            e.printStackTrace();
+        } finally {
+            try {
+                is.close();
+                ois.close();
+                os.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
