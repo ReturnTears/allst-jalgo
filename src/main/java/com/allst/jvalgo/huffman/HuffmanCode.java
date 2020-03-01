@@ -21,12 +21,14 @@ public class HuffmanCode {
         Map<Byte, String> map = getHuffmanCodes(nodes);
         // System.out.println(map);
         byte[] result = encodeHuffm(contentBytes, map);
-        StringBuilder sb = new StringBuilder();
+        /*StringBuilder sb = new StringBuilder();
         for (byte b : result) {
             sb.append(b);
         }
-        // System.out.println(sb.toString());
+        System.out.println(sb.toString());*/
 
+        byte[] encodeResult = decodeHuffm(map, result);
+        System.out.println("result : " + Arrays.toString(encodeResult));
     }
 
     /**
@@ -167,6 +169,87 @@ public class HuffmanCode {
         }
 
         return huffmEncode;
+    }
+
+    /**
+     * 封装方法
+     * @param bytes     原始字符串对应的字节数组
+     * @return          是经过赫夫曼编码处理后的字节数组(压缩后数组)
+     */
+    private static byte[] huffmanZip(byte[] bytes) {
+        List<Node> nodes = getNodes(bytes);
+        Node huffmRoot = createHufmTree(nodes);
+        Map<Byte, String> huffmCodes = getHuffmanCodes(huffmRoot);
+        return encodeHuffm(bytes, huffmCodes);
+    }
+
+    /**
+     * 将byte转换成二进制字符串
+     * @param flag      标志是否需要补高位，true / false
+     * @param b         传入的byte
+     * @return          结果
+     */
+    private static String byte2BitString(boolean flag, byte b) {
+        int temp = b;
+        if (flag) {
+            temp |= 256;    // 运算后的temp是对应二进制的补码
+        }
+        String str = Integer.toBinaryString(temp);
+        if (flag) {
+            return str.substring(str.length() - 8);
+        } else {
+            return str;
+        }
+    }
+
+    /**
+     * 对经过赫夫曼编码后的数据进行解码
+     * @param huffmanCodes      赫夫曼编码表
+     * @param huffmanBytes      赫夫曼编码后的字节数组
+     * @return                  结果
+     */
+    private static byte[] decodeHuffm(Map<Byte, String> huffmanCodes, byte[] huffmanBytes) {
+        StringBuilder sb = new StringBuilder();
+        // 将byte数组转换位二进制的字符串
+        for (int i = 0; i < huffmanBytes.length; i++) {
+            byte b = huffmanBytes[i];
+            // 判断是否最后一个字节
+            boolean flag = (i == huffmanBytes.length - 1);
+            sb.append(byte2BitString(!flag, b));
+        }
+        // System.out.println("sb~~~ : " + sb.toString());
+        // 把字符串按照指定的赫夫曼编码进行解码
+        Map<String, Byte> map = new HashMap<>();
+        for (Map.Entry<Byte, String> entry : huffmanCodes.entrySet()) {
+            map.put(entry.getValue(), entry.getKey());
+        }
+        //
+        List<Byte> list = new ArrayList<>();
+        for (int i = 0; i < sb.length(); ) {
+            // 计数器
+            int count = 1;
+            boolean flag = true;
+            Byte b = null;
+            while (flag) {
+                // 递增取出key, i不动让count移动，指定匹配到一个字符
+                String key = sb.substring(i, i + count);
+                b = map.get(key);
+                // 没有匹配上
+                if (b == null) {
+                    count++;
+                } else {        // 匹配到就退出
+                    flag = false;
+                }
+            }
+            list.add(b);
+            i += count;     // 直接移动到count处所在的字符
+        }
+        // for循环结束后， list中存放的就是解码后的原字符串
+        byte[] bytes = new byte[list.size()];
+        for (int i = 0; i < bytes.length; i++) {
+            bytes[i] = list.get(i);
+        }
+        return bytes;
     }
 }
 
