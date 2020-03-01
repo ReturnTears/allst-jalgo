@@ -21,14 +21,19 @@ public class HuffmanCode {
         Map<Byte, String> map = getHuffmanCodes(nodes);
         // System.out.println(map);
         byte[] result = encodeHuffm(contentBytes, map);
+        System.out.println(Arrays.toString(result));
         /*StringBuilder sb = new StringBuilder();
         for (byte b : result) {
             sb.append(b);
         }
         System.out.println(sb.toString());*/
 
+        // 调用封装的方法
+        // byte[] result2 = huffmanZip(contentBytes);
+
         byte[] encodeResult = decodeHuffm(map, result);
-        System.out.println("result : " + Arrays.toString(encodeResult));
+        System.out.println("result0 : " + new String(encodeResult));
+        // System.out.println("result2 : " + Arrays.toString(encodeResult));
     }
 
     /**
@@ -185,18 +190,19 @@ public class HuffmanCode {
 
     /**
      * 将byte转换成二进制字符串
-     * @param flag      标志是否需要补高位，true / false
+     * @param flag      标志是否需要补高位，true / false， 如果是最后一个字节无需补高位
      * @param b         传入的byte
      * @return          结果
      */
     private static String byte2BitString(boolean flag, byte b) {
         int temp = b;
+        // 如果是正数还存在补高位问题
         if (flag) {
             temp |= 256;    // 运算后的temp是对应二进制的补码
         }
         String str = Integer.toBinaryString(temp);
         if (flag) {
-            return str.substring(str.length() - 8);
+            return str.substring(str.length() - 8); // 取后8位
         } else {
             return str;
         }
@@ -225,7 +231,7 @@ public class HuffmanCode {
         }
         //
         List<Byte> list = new ArrayList<>();
-        for (int i = 0; i < sb.length(); ) {
+        for (int i = 0; i < sb.length(); ) {    // i相当于一个索引， 不断扫描二进制字符串
             // 计数器
             int count = 1;
             boolean flag = true;
