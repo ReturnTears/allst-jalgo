@@ -1,5 +1,6 @@
 package com.allst.jvalgo.huffman;
 
+import java.io.*;
 import java.util.*;
 
 /**
@@ -34,6 +35,12 @@ public class HuffmanCode {
         byte[] encodeResult = decodeHuffm(map, result);
         System.out.println("result0 : " + new String(encodeResult));
         // System.out.println("result2 : " + Arrays.toString(encodeResult));
+
+        // 压缩文件
+        String srcFile = "E:\\TestData\\ck.jpg";
+        String dstFile = "E:\\TestData\\encodeCk.zip";
+        zipFile(srcFile, dstFile);
+        System.out.println("压缩文件完成~~~");
     }
 
     /**
@@ -256,6 +263,48 @@ public class HuffmanCode {
             bytes[i] = list.get(i);
         }
         return bytes;
+    }
+
+    /**
+     * 使用赫夫曼编码对文件进行压缩
+     * @param srcFile       源文件路径
+     * @param dstFile       压缩文件路径
+     */
+    private static void zipFile(String srcFile, String dstFile) {
+        FileInputStream fis = null;
+        FileOutputStream fos = null;
+        ObjectOutputStream oos = null;
+        try {
+            // 文件输入流
+            fis = new FileInputStream(srcFile);
+            // 船舰一个和源文件大小一样的byte[]
+            byte[] b = new byte[fis.available()];
+            // 读取文件
+            fis.read(b);
+            // 队员文件直接压缩
+            byte[] huffmBytes = huffmanZip(b);
+            // 文件输出流
+            fos = new FileOutputStream(dstFile);
+            // 对象输出流
+            oos = new ObjectOutputStream(fos);
+            // 把赫夫曼编码后的字节数组写入压缩文件
+            oos.writeObject(huffmBytes);
+            // 注意： 这里需要把赫夫曼编码写入压缩文件， 为了恢复文件时使用
+            oos.writeObject(huffmanCodes);
+        } catch (FileNotFoundException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                fis.close();
+                fos.close();
+                oos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
 
