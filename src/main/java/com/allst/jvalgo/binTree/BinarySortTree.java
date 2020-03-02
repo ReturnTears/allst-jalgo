@@ -34,6 +34,13 @@ public class BinarySortTree {
         tree.deleteNode(3);
         System.out.println("删除右两颗子树的节点后~~~");
         tree.infixOrder();
+
+        // 随便颠倒删除节点的顺序都可以
+        /*tree.deleteNode(2);
+        tree.deleteNode(1);
+        tree.deleteNode(5);
+        System.out.println("删除节点后~~~");
+        tree.infixOrder();*/
     }
 
 }
@@ -141,23 +148,33 @@ class BinSortTree {
             } else if (targetNode.left != null && targetNode.right != null) {
                 int minValue = delRightTreeMin(targetNode.right);
                 targetNode.value = minValue;
+
+                // TODO 换一种思路: 从左子树找到最大的节点，
             } else {    // 删除只有一颗子树的节点
                 // 如果要删除的节点有左子节点
                 if (targetNode.left != null) {
-                    // 如果targetNode是parent的左子节点
-                    if (parent.left.value == value) {
-                        parent.left = targetNode.left;
+                    if (parent != null) {
+                        // 如果targetNode是parent的左子节点
+                        if (parent.left.value == value) {
+                            parent.left = targetNode.left;
+                        } else {
+                            // 如果targetNode是parent的右子节点
+                            parent.right = targetNode.left;
+                        }
                     } else {
-                        // 如果targetNode是parent的右子节点
-                        parent.right = targetNode.left;
+                        root = targetNode.left;
                     }
                 } else {    // 如果要删除的节点有右子节点
-                    if (parent.left.value == value) {
-                        // 如果targetNode是parent的左子节点
-                        parent.left = targetNode.right;
+                    if (parent != null) {
+                        if (parent.left.value == value) {
+                            // 如果targetNode是parent的左子节点
+                            parent.left = targetNode.right;
+                        } else {
+                            // 如果targetNode是parent的右子节点
+                            parent.right = targetNode.right;
+                        }
                     } else {
-                        // 如果targetNode是parent的右子节点
-                        parent.right = targetNode.right;
+                        root = targetNode.right;
                     }
                 }
 
