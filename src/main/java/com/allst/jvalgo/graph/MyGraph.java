@@ -1,7 +1,5 @@
 package com.allst.jvalgo.graph;
 
-import com.sun.corba.se.impl.orbutil.graph.Graph;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -20,10 +18,70 @@ public class MyGraph {
     // 边的数目
     private int numOfEdges;
 
+    private boolean[] isVisit;
+
     public MyGraph(int n) {
         edges = new int[n][n];
         vertexList = new ArrayList<>(n);
         numOfEdges = 0;
+        isVisit = new boolean[5];
+    }
+
+    // 深度优先遍历算法
+    public void dfs(boolean[] isVisit ,int index) {
+        System.out.print(getValueByIndex(index) + " -> ");
+
+        isVisit[index] = true;
+
+        int w = getFirstNeighbor(index);
+
+        while (w != -1) {
+            if (!isVisit[w]) {
+                dfs(isVisit, w);
+            }
+            w = getNextNeighbor(index, w);
+        }
+    }
+
+    // 对dfs方法进行重载
+    public void dfs() {
+        // 遍历所有节点进行dfs回溯
+        for (int i = 0; i < getVertexSize(); i++) {
+            if (!isVisit[i]) {
+                dfs(isVisit, i);
+            }
+        }
+    }
+
+
+
+    /**
+     * 获取第一个邻接节点
+     * @param index 索引
+     * @return 如果存在就返回对应的下标， 否则返回-1
+     */
+    public int getFirstNeighbor(int index) {
+        for (int i = 0; i < vertexList.size(); i++) {
+            if (edges[index][i] > 0) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    /**
+     * 通过邻接节点的下标来获取下一个邻接结点
+     * @param v1
+     * @param v2
+     * @return
+     */
+    public int getNextNeighbor(int v1, int v2) {
+        for (int i = v2 + 1; i < vertexList.size(); i++) {
+            if (edges[v1][i] > 0) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     /**
@@ -42,7 +100,7 @@ public class MyGraph {
     }
 
     /**
-     * 节点i对应的数据
+     * 获取顶点i对应的数据
      * @param i
      * @return
      */
@@ -81,6 +139,8 @@ public class MyGraph {
         numOfEdges++;
     }
 
+
+
     public static void main(String[] args) {
         int n = 5;
         String[] vertexValue = {"A", "B", "C", "D", "E"};
@@ -95,6 +155,9 @@ public class MyGraph {
         graph.insertEdge(1, 4, 1);
 
         graph.showGraph();
+
+        System.out.println("深度遍历~~~");
+        graph.dfs();
     }
 
 }
