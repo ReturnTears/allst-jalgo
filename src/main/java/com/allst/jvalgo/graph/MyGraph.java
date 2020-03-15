@@ -2,6 +2,7 @@ package com.allst.jvalgo.graph;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -24,7 +25,7 @@ public class MyGraph {
         edges = new int[n][n];
         vertexList = new ArrayList<>(n);
         numOfEdges = 0;
-        isVisit = new boolean[5];
+        // isVisit = new boolean[vertexList.size()];
     }
 
     // 深度优先遍历算法
@@ -45,6 +46,7 @@ public class MyGraph {
 
     // 对dfs方法进行重载
     public void dfs() {
+        isVisit = new boolean[vertexList.size()];
         // 遍历所有节点进行dfs回溯
         for (int i = 0; i < getVertexSize(); i++) {
             if (!isVisit[i]) {
@@ -53,7 +55,46 @@ public class MyGraph {
         }
     }
 
+    /**
+     * 对一个节点进行广度优先遍历
+     * bf: breadth first 广度优先
+     */
+    public void bf(boolean[] isVisited, int i) {
+        int v;  // 对立的头节点对应的下标
+        int w;  // 邻接结点w
+        // 队列，记录节点访问的顺序
+        LinkedList queue = new LinkedList();
+        // 访问节点，输出节点信息
+        System.out.print(getValueByIndex(i) + " => ");
+        // 标记为已访问
+        isVisited[i] = true;
+        // 将节点加入队列
+        queue.addLast(i);
+        while (!queue.isEmpty()) {
+            v = (int) queue.removeFirst();
+            w = getFirstNeighbor(v);
+            while (w != -1) { // 找到
+                // 是否访问过
+                if (!isVisited[w]) {
+                    System.out.print(getValueByIndex(w) + " => ");
+                    isVisited[w] = true;
+                    queue.addLast(w);
+                }
+                // 以v为前驱节点， 找w后面的下一个邻节点
+                w = getNextNeighbor(v, w);  // 体现了广度优先
+            }
+        }
+    }
 
+    // 重写广度优先
+    public void bfs() {
+        isVisit = new boolean[vertexList.size()];
+        for (int i = 0; i < getVertexSize(); i++) {
+            if (!isVisit[i]) {
+                bf(isVisit, i);
+            }
+        }
+    }
 
     /**
      * 获取第一个邻接节点
@@ -157,7 +198,31 @@ public class MyGraph {
         graph.showGraph();
 
         System.out.println("深度遍历~~~");
-        graph.dfs();
+        // graph.dfs();
+
+        System.out.println("广度遍历~~~");
+        // graph.bfs();
+
+        // 图的深度优先VS广度优先
+        String[] values = {"1", "2", "3", "4", "5", "6", "7", "8"};
+        MyGraph graph2 = new MyGraph(values.length);
+        for (String v : values) {
+            graph2.insertVertex(v);
+        }
+        graph2.insertEdge(0, 1, 1);
+        graph2.insertEdge(0, 2, 1);
+        graph2.insertEdge(1, 3, 1);
+        graph2.insertEdge(1, 4, 1);
+        graph2.insertEdge(3, 7, 1);
+        graph2.insertEdge(4, 7, 1);
+        graph2.insertEdge(2, 5, 1);
+        graph2.insertEdge(2, 6, 1);
+        graph2.insertEdge(5, 6, 1);
+        System.out.println("深度遍历~~~");
+        graph2.dfs();
+        System.out.println();
+        System.out.println("广度遍历~~~");
+        graph2.bfs();
     }
 
 }
