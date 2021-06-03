@@ -14,6 +14,7 @@ public class TwoNumsSum {
     public static void main(String... args) {
         System.out.println(Arrays.toString(solution1(new int[]{1, 2, 3, 4, 5, 6}, 10)));
         System.out.println(Arrays.toString(solution2(new int[]{1, 2, 3, 4, 5, 6}, 10)));
+        System.out.println(Arrays.toString(solution3(new int[]{1, 2, 3, 4, 5, 6}, 10)));
     }
 
     /**
@@ -56,5 +57,51 @@ public class TwoNumsSum {
             map.put(nums[i], i);
         }
         return new int[0];
+    }
+
+    /**
+     * 二分查找
+     * 给定一个升序排列的整数数组numbers, 从数组中找出两个满足相加之和等于目标数target
+     *
+     * @return 返回元素的下标
+     */
+    private static int[] solution3(int[] numbers, int target) {
+        for (int i = 0; i < numbers.length; i++) {
+            int low = i, high = numbers.length - 1;
+            while (low <= high) {
+                int mid = (high - low) / 2 + low;
+                if (numbers[mid] == target - numbers[i]) {
+                    return new int[]{i, mid};
+                } else if (numbers[mid] > target - numbers[i]) {
+                    high = mid - 1;
+                } else {
+                    low = mid + 1;
+                }
+            }
+        }
+        return new int[]{0};
+    }
+
+    /**
+     * 双指针算法
+     * 一个指针向左移， 一个指针向右移， 直致重合， (适合于已排序的数组)
+     *  时间的复杂度O(1)
+     *  最优解
+     *
+     * @return 返回元素的下标
+     */
+    private static int[] solution4(int[] numbers, int target) {
+        int low = 0, high = numbers.length - 1;
+        while (low < high) {
+            int sum = numbers[low] + numbers[high];
+            if (sum == target) {
+                return new int[] {low, high};
+            } else if (sum < target) {
+                low++;
+            } else {
+                high--;
+            }
+        }
+        return new int[]{0};
     }
 }
