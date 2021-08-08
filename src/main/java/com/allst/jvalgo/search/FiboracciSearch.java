@@ -10,7 +10,7 @@ import java.util.Arrays;
  */
 public class FiboracciSearch {
 
-    private static int maxSize = 20;
+    private final static int maxSize = 20;
 
     public static void main(String[] args) {
         int[] arr = {1, 8, 10, 22, 89, 100, 1234};

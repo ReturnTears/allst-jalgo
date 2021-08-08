@@ -15,7 +15,7 @@ public class BinarySearch {
         int[] arr = {-11, -7, 0, 9, 22, 22, 22, 23, 40, 66, 100, 100, 100};
         int result = binarySearch(arr, 0, arr.length, -7);
         System.out.println("index = " + result);
-        List result2 = binarySearch2(arr, 0, arr.length, 100);
+        List<Integer> result2 = binarySearch2(arr, 0, arr.length, 100);
         System.out.println("index = " + result2);
     }
 
@@ -58,7 +58,7 @@ public class BinarySearch {
      * @param value     带查找值
      * @return          索引集合
      */
-    private static List binarySearch2(int[] arr, int left, int right, int value) {
+    private static List<Integer> binarySearch2(int[] arr, int left, int right, int value) {
         int mid = (left + right) / 2;
         int midValue = arr[mid];
         // 当left > right时表示递归完成，任未找到
