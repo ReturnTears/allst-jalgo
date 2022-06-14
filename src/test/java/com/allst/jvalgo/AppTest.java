@@ -2,6 +2,7 @@ package com.allst.jvalgo;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -32,6 +33,18 @@ public class AppTest
 
     @Test
     public void test() {
+        System.out.println(Integer.valueOf("05"));
         System.out.println(System.currentTimeMillis());
+    }
+
+    @Test
+    public void test2() {
+        BigDecimal a = BigDecimal.ZERO;
+        BigDecimal param = new BigDecimal("");
+        boolean equals = a.equals(param);
+        System.out.println(equals);
+
+        BigDecimal params = new BigDecimal("");
+        System.out.println(params.equals(null));
     }
 }
