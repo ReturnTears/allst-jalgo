@@ -1,9 +1,14 @@
 package com.allst.jvalgo;
 
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Map;
 import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -60,5 +65,16 @@ public class AppTest
         System.out.println(params.isEmpty());
         System.out.println(params.contains(""));
         System.out.println(params.size());
+    }
+
+    @Test
+    public void test4() throws ParseException {
+        Map<String, Object> map = Maps.newHashMap();
+        map.put("dt", "2022-07-02");
+        //Date date = new Date(map.get("dt").toString());
+        //System.out.println(date);
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        Date dt = df.parse(map.get("dt").toString());
+        System.out.println(dt);
     }
 }
