@@ -1,8 +1,10 @@
 package com.allst.jvalgo;
 
+import com.google.common.collect.Sets;
 import org.junit.Test;
 
 import java.math.BigDecimal;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -46,5 +48,17 @@ public class AppTest
 
         BigDecimal params = new BigDecimal("");
         System.out.println(params.equals(null));
+    }
+
+    @Test
+    public void test3() {
+        Set<String> params = Sets.newHashSet();
+        params.add("");
+        params.add("");
+        params.add("");
+
+        System.out.println(params.isEmpty());
+        System.out.println(params.contains(""));
+        System.out.println(params.size());
     }
 }
