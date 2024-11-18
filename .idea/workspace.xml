@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec2d62c6-c05d-4bda-a974-dfa0de7084e7" name="Default" comment="创建流">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/advalgo/RandomNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/advalgo/RandomNums.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>10</find>
+      <find>60</find>
+      <find>paint</find>
+      <find>huffmZipFile</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>num1</replace>
+      <replace>num2</replace>
+      <replace>num4</replace>
+      <replace>num6</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dependabot/maven/junit-junit-4.13.1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/ReturnTears/allst-jalgo.git" />
+      </set>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Program Files/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\Program Files\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="11" />
+        <option name="vmOptionsForImporter" value="-Xmx768m -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="11" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="1scfkJzqkWxpsIQ3h3403AIUbha" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Ali-Check</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenModules" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3441763",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RebelAgentSelection">
+    <selection>jxr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.allst.scala.array" />
+      <recent name="com.allst.scala" />
+      <recent name="com.allst.jvalgo.sort" />
+      <recent name="com.allst.jvalgo.demo" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-jalgo\src\main\java\com\allst\jvalgo\queue" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RandomNums">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="DEPLOY_ACS_RUN_CONFIGURATION" factoryName="CS Kubernetes on Alibaba Cloud">
+      <option name="alreadyReset" value="true" />
+      <option name="autoVersion" value="false" />
+      <option name="contextDirectory" />
+      <option name="controllerType" />
+      <option name="dockerfile" />
+      <option name="imageRepoName" />
+      <option name="imageRepoNamespace" />
+      <option name="imageRepoRegionId" />
+      <option name="imageRepoStatus" />
+      <option name="imageRepoTagName" />
+      <option name="imageRepoType" />
+      <option name="k8sClusterId" />
+      <option name="k8sClusterName" />
+      <option name="k8sContainerNames" />
+      <option name="k8sControllerName" />
+      <option name="k8sControllerQuery" />
+      <option name="k8sNamespace" />
+      <option name="onlyDeployImage" value="false" />
+      <option name="regionId" />
+      <option name="registoryType" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../allst-jalgo\pom.xml" goal="clean install" />
+      </method>
+    </configuration>
+    <configuration default="true" type="DEPLOY_ACS_RUN_CONFIGURATION" factoryName="Deploy to ACR">
+      <option name="alreadyReset" value="true" />
+      <option name="autoVersion" value="false" />
+      <option name="contextDirectory" />
+      <option name="controllerType" />
+      <option name="dockerfile" />
+      <option name="imageRepoName" />
+      <option name="imageRepoNamespace" />
+      <option name="imageRepoRegionId" />
+      <option name="imageRepoStatus" />
+      <option name="imageRepoTagName" />
+      <option name="imageRepoType" />
+      <option name="k8sClusterId" />
+      <option name="k8sClusterName" />
+      <option name="k8sContainerNames" />
+      <option name="k8sControllerName" />
+      <option name="k8sControllerQuery" />
+      <option name="k8sNamespace" />
+      <option name="onlyDeployImage" value="false" />
+      <option name="regionId" />
+      <option name="registoryType" />
+      <method v="2">
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../allst-jalgo\pom.xml" goal="clean install" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.search.BinarySearch" />
+      <module name="allst-jalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.jvalgo.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.leetcode.PrimeNumber" />
+      <module name="allst-jalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.jvalgo.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomNums" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.advalgo.RandomNums" />
+      <module name="allst-jalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.jvalgo.advalgo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoveDuplicatesBySortArray" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.scala.array.RemoveDuplicatesBySortArray" />
+      <module name="allst-jalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.scala.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamCreaed" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.stream.StreamCreaed" />
+      <module name="allst-jalgo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.allst.jvalgo.stream.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.0.38" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="D:\Program Files\Java\jdk1.8.0_131\jre">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_Default_(Template)_Project" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.RandomNums" />
+      <item itemvalue="Application.StreamCreaed" />
+      <item itemvalue="Application.RemoveDuplicatesBySortArray" />
+      <item itemvalue="Application.BinarySearch" />
+      <item itemvalue="Application.PrimeNumber" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RandomNums" />
+        <item itemvalue="Application.StreamCreaed" />
+        <item itemvalue="Application.RemoveDuplicatesBySortArray" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.PrimeNumber" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="scala3DisclaimerShown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\June\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec2d62c6-c05d-4bda-a974-dfa0de7084e7" name="Default" comment="" />
+      <created>1547351576245</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547351576245</updated>
+      <workItem from="1581838853265" duration="17905000" />
+      <workItem from="1581908061103" duration="4176000" />
+      <workItem from="1581922962069" duration="12492000" />
+      <workItem from="1581996702230" duration="9541000" />
+      <workItem from="1582031020450" duration="10426000" />
+      <workItem from="1582095964295" duration="23251000" />
+      <workItem from="1582136408917" duration="9000" />
+      <workItem from="1582166574598" duration="12967000" />
+      <workItem from="1582214652583" duration="7410000" />
+      <workItem from="1582248457349" duration="155000" />
+      <workItem from="1582248653196" duration="7414000" />
+      <workItem from="1582272377123" duration="22335000" />
+      <workItem from="1582308802719" duration="684000" />
+      <workItem from="1582346444456" duration="9069000" />
+      <workItem from="1582381298559" duration="5697000" />
+      <workItem from="1582434193100" duration="1229000" />
+      <workItem from="1582441957093" duration="4336000" />
+      <workItem from="1582638445836" duration="11306000" />
+      <workItem from="1582685041991" duration="4303000" />
+      <workItem from="1582791125729" duration="67000" />
+      <workItem from="1582795961687" duration="7208000" />
+      <workItem from="1582861183995" duration="5163000" />
+      <workItem from="1582943572195" duration="50000" />
+      <workItem from="1582991256615" duration="4276000" />
+      <workItem from="1583022057448" duration="18991000" />
+      <workItem from="1583154214787" duration="9127000" />
+      <workItem from="1583243601561" duration="2729000" />
+      <workItem from="1583334372040" duration="2049000" />
+      <workItem from="1583420247864" duration="2795000" />
+      <workItem from="1583506474073" duration="1835000" />
+      <workItem from="1583675937076" duration="5773000" />
+      <workItem from="1583767626203" duration="4586000" />
+      <workItem from="1584109063837" duration="766000" />
+      <workItem from="1584114595668" duration="663000" />
+      <workItem from="1584243413936" duration="54000" />
+      <workItem from="1584259442891" duration="9336000" />
+      <workItem from="1584371533772" duration="3191000" />
+      <workItem from="1584453754924" duration="80000" />
+      <workItem from="1584453906893" duration="237000" />
+      <workItem from="1584454431551" duration="5708000" />
+      <workItem from="1584542298042" duration="1886000" />
+      <workItem from="1584629205935" duration="4416000" />
+      <workItem from="1621176953280" duration="215000" />
+      <workItem from="1621177178032" duration="2493000" />
+      <workItem from="1621519421494" duration="5924000" />
+      <workItem from="1622642886959" duration="4309000" />
+      <workItem from="1622727582112" duration="5101000" />
+      <workItem from="1622900555427" duration="5638000" />
+      <workItem from="1623252673508" duration="1856000" />
+      <workItem from="1623332758595" duration="2640000" />
+      <workItem from="1623857548185" duration="11597000" />
+      <workItem from="1628418196801" duration="1764000" />
+      <workItem from="1630242720161" duration="5806000" />
+      <workItem from="1636213648324" duration="331000" />
+      <workItem from="1636514839602" duration="1449000" />
+      <workItem from="1636902061629" duration="84000" />
+      <workItem from="1644478024012" duration="34000" />
+      <workItem from="1644478107085" duration="304000" />
+      <workItem from="1646916057450" duration="17000" />
+      <workItem from="1646916160974" duration="49000" />
+      <workItem from="1647410458280" duration="467000" />
+      <workItem from="1655217061102" duration="824000" />
+      <workItem from="1655275453337" duration="3593000" />
+      <workItem from="1657114038557" duration="62000" />
+      <workItem from="1659058818342" duration="2316000" />
+      <workItem from="1659108311000" duration="206000" />
+      <workItem from="1659109041360" duration="1201000" />
+      <workItem from="1659110309983" duration="354000" />
+      <workItem from="1659110703288" duration="2294000" />
+      <workItem from="1695023156810" duration="4500000" />
+      <workItem from="1708916153012" duration="2384000" />
+      <workItem from="1714143588815" duration="967000" />
+      <workItem from="1715955477955" duration="3056000" />
+      <workItem from="1723127634316" duration="227000" />
+      <workItem from="1723640427385" duration="52000" />
+      <workItem from="1723642602818" duration="361000" />
+      <workItem from="1724075889134" duration="2923000" />
+      <workItem from="1724160927517" duration="2383000" />
+      <workItem from="1727710091421" duration="911000" />
+      <workItem from="1731940677204" duration="1145000" />
+    </task>
+    <task id="LOCAL-00060" summary="二叉排序树删除节点注意实现">
+      <created>1583163124296</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1583163124296</updated>
+    </task>
+    <task id="LOCAL-00061" summary="LeetCode算法1">
+      <created>1583245838695</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1583245838696</updated>
+    </task>
+    <task id="LOCAL-00062" summary="删除非必要类">
+      <created>1583245984669</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1583245984669</updated>
+    </task>
+    <task id="LOCAL-00063" summary="循环队列">
+      <created>1583246320708</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1583246320708</updated>
+    </task>
+    <task id="LOCAL-00064" summary="平衡二叉树">
+      <created>1583340303688</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1583340303689</updated>
+    </task>
+    <task id="LOCAL-00065" summary="平衡二叉树">
+      <created>1583421586779</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1583421586780</updated>
+    </task>
+    <task id="LOCAL-00066" summary="平衡二叉树&#10;二叉排序树(双旋转)">
+      <created>1583508281330</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1583508281331</updated>
+    </task>
+    <task id="LOCAL-00067" summary="图">
+      <created>1583683313372</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1583683313372</updated>
+    </task>
+    <task id="LOCAL-00068" summary="图的深度优先算法">
+      <created>1583772044584</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1583772044585</updated>
+    </task>
+    <task id="LOCAL-00069" summary="图的广度优先算法">
+      <created>1584262928676</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1584262928678</updated>
+    </task>
+    <task id="LOCAL-00070" summary="算法~二分查找的非递归">
+      <created>1584264637251</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1584264637251</updated>
+    </task>
+    <task id="LOCAL-00071" summary="算法~分治算法&#10;分治算法应用-汉诺塔">
+      <created>1584267077906</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1584267077906</updated>
+    </task>
+    <task id="LOCAL-00072" summary="递归">
+      <created>1584288338773</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1584288338773</updated>
+    </task>
+    <task id="LOCAL-00073" summary="算法 - 动态规划问题&#10;背包案例">
+      <created>1584375615369</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1584375615370</updated>
+    </task>
+    <task id="LOCAL-00074" summary="算法 - KMP&#10;暴力匹配算法">
+      <created>1584456292220</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1584456292221</updated>
+    </task>
+    <task id="LOCAL-00075" summary="算法 - KMP算法">
+      <created>1584460088966</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1584460088966</updated>
+    </task>
+    <task id="LOCAL-00076" summary="算法 - 贪心算法">
+      <created>1584546792519</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1584546792519</updated>
+    </task>
+    <task id="LOCAL-00077" summary="算法 - 贪心算法">
+      <created>1584632973363</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1584632973363</updated>
+    </task>
+    <task id="LOCAL-00078" summary="算法 - 贪心算法">
+      <created>1584633160624</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1584633160624</updated>
+    </task>
+    <task id="LOCAL-00079" summary="链表反转：迭代与递归">
+      <created>1621179587018</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1621179587019</updated>
+    </task>
+    <task id="LOCAL-00080" summary="艾斯筛选法查找素数个数">
+      <created>1621522451279</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1621522451280</updated>
+    </task>
+    <task id="LOCAL-00081" summary="双指针算法删除排序数组中重复项">
+      <created>1621524063959</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1621524063959</updated>
+    </task>
+    <task id="LOCAL-00082" summary="寻找数组的中心下标">
+      <created>1621525075065</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1621525075065</updated>
+    </task>
+    <task id="LOCAL-00083" summary="牛顿迭代 计算一个数的平方根">
+      <created>1622643714855</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1622643714856</updated>
+    </task>
+    <task id="LOCAL-00084" summary="线性扫描计算数组中三个元素相乘的最大值">
+      <created>1622645423958</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1622645423958</updated>
+    </task>
+    <task id="LOCAL-00085" summary="map标记法计算数组中两数和为target的元素下标">
+      <created>1622647053433</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1622647053433</updated>
+    </task>
+    <task id="LOCAL-00086" summary="双指针算法&amp;二分查找计算数组中两数和为target的元素下标">
+      <created>1622728667390</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1622728667390</updated>
+    </task>
+    <task id="LOCAL-00087" summary="三种方式计算斐波拉契数列">
+      <created>1622730399593</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1622730399593</updated>
+    </task>
+    <task id="LOCAL-00088" summary="三种方式计算硬币排列">
+      <created>1622732738841</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1622732738842</updated>
+    </task>
+    <task id="LOCAL-00089" summary="两种方式判断环形链表是否存在环">
+      <created>1622901651819</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1622901651820</updated>
+    </task>
+    <task id="LOCAL-00090" summary="合并有序数组">
+      <created>1622904457652</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1622904457652</updated>
+    </task>
+    <task id="LOCAL-00091" summary="滑动窗口算法计算子数组最大平均数">
+      <created>1622905427226</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1622905427226</updated>
+    </task>
+    <task id="LOCAL-00092" summary="二叉树的深度优先算法">
+      <created>1623253628229</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1623253628231</updated>
+    </task>
+    <task id="LOCAL-00093" summary="二叉树的广度优先算法">
+      <created>1623254375043</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1623254375043</updated>
+    </task>
+    <task id="LOCAL-00094" summary="贪心算法">
+      <created>1623334511967</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1623334511968</updated>
+    </task>
+    <task id="LOCAL-00095" summary="二分查找与冒泡排序">
+      <created>1623858956486</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1623858956487</updated>
+    </task>
+    <task id="LOCAL-00096" summary="插入排序、快速排序、希尔排序">
+      <created>1623943259421</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1623943259421</updated>
+    </task>
+    <task id="LOCAL-00097" summary="归并排序算法、桶排序算法">
+      <created>1623946119580</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1623946119581</updated>
+    </task>
+    <task id="LOCAL-00098" summary="判定字符是否唯一">
+      <created>1628419236563</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1628419236564</updated>
+    </task>
+    <task id="LOCAL-00099" summary="找出数组中重复的数字">
+      <created>1630245326961</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1630245326962</updated>
+    </task>
+    <task id="LOCAL-00100" summary="数据结构简介">
+      <created>1630246251893</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1630246251893</updated>
+    </task>
+    <task id="LOCAL-00101" summary="数据结构简介">
+      <created>1630248811283</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1630248811283</updated>
+    </task>
+    <task id="LOCAL-00102" summary="替换空格">
+      <created>1630249156189</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1630249156189</updated>
+    </task>
+    <task id="LOCAL-00103" summary="test">
+      <created>1636902138704</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1636902138705</updated>
+    </task>
+    <task id="LOCAL-00104" summary="test">
+      <created>1655217506091</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1655217506093</updated>
+    </task>
+    <task id="LOCAL-00105" summary="test">
+      <created>1655426448003</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1655426448003</updated>
+    </task>
+    <task id="LOCAL-00106" summary="test">
+      <created>1655474964728</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1655474964728</updated>
+    </task>
+    <task id="LOCAL-00107" summary="删除排序数组中的重复项">
+      <created>1659107882946</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1659107882946</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Scala删除排序数组中的重复项">
+      <created>1659112899768</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1659112899768</updated>
+    </task>
+    <option name="localTasksCounter" value="116" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="双指针算法&amp;二分查找计算数组中两数和为target的元素下标" />
+    <MESSAGE value="三种方式计算斐波拉契数列" />
+    <MESSAGE value="三种方式计算硬币排列" />
+    <MESSAGE value="两种方式判断环形链表是否存在环" />
+    <MESSAGE value="合并有序数组" />
+    <MESSAGE value="滑动窗口算法计算子数组最大平均数" />
+    <MESSAGE value="二叉树的深度优先算法" />
+    <MESSAGE value="二叉树的广度优先算法" />
+    <MESSAGE value="贪心算法" />
+    <MESSAGE value="二分查找与冒泡排序" />
+    <MESSAGE value="插入排序、快速排序、希尔排序" />
+    <MESSAGE value="归并排序算法、桶排序算法" />
+    <MESSAGE value="判定字符是否唯一" />
+    <MESSAGE value="找出数组中重复的数字" />
+    <MESSAGE value="数据结构简介" />
+    <MESSAGE value="替换空格" />
+    <MESSAGE value="test" />
+    <MESSAGE value="删除排序数组中的重复项" />
+    <MESSAGE value="Scala删除排序数组中的重复项" />
+    <MESSAGE value="java 算法 双指针" />
+    <MESSAGE value="java 递推算法" />
+    <MESSAGE value="图解Java数据结构与算法" />
+    <MESSAGE value="添加git忽略文件" />
+    <MESSAGE value="秒懂算法-1" />
+    <MESSAGE value="创建流" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建流" />
+  </component>
+</project>
