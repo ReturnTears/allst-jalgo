@@ -21,14 +21,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2d62c6-c05d-4bda-a974-dfa0de7084e7" name="Default" comment="创建流">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/advalgo/RandomNums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/advalgo/RandomNums.java" afterDir="false" />
+    <list default="true" id="ec2d62c6-c05d-4bda-a974-dfa0de7084e7" name="Default" comment="default file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/algorithm/algo/README-ALGO.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,39 +155,41 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.3441763",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProjects/allst-jalgo/src/main/java/com/allst/jvalgo/algorithm/algo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3441763&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RebelAgentSelection">
     <selection>jxr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\allst-jalgo\src\main\java\com\allst\jvalgo\algorithm\algo" />
+      <recent name="E:\IdeaProjects\allst-jalgo\src\main\java\com\allst\jvalgo\queue" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.allst.scala.array" />
       <recent name="com.allst.scala" />
       <recent name="com.allst.jvalgo.sort" />
       <recent name="com.allst.jvalgo.demo" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IdeaProjects\allst-jalgo\src\main\java\com\allst\jvalgo\queue" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.RandomNums">
+  <component name="RunManager" selected="Application.AppStack">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -249,13 +246,13 @@
         <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/../allst-jalgo\pom.xml" goal="clean install" />
       </method>
     </configuration>
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.search.BinarySearch" />
+    <configuration name="AppStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.algorithm.algo.AppStack" />
       <module name="allst-jalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.jvalgo.search.*" />
+          <option name="PATTERN" value="com.allst.jvalgo.algorithm.algo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -263,13 +260,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.leetcode.PrimeNumber" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.allst.jvalgo.search.BinarySearch" />
       <module name="allst-jalgo" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.allst.jvalgo.leetcode.*" />
+          <option name="PATTERN" value="com.allst.jvalgo.search.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -414,19 +411,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.AppStack" />
       <item itemvalue="Application.RandomNums" />
       <item itemvalue="Application.StreamCreaed" />
       <item itemvalue="Application.RemoveDuplicatesBySortArray" />
       <item itemvalue="Application.BinarySearch" />
-      <item itemvalue="Application.PrimeNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppStack" />
         <item itemvalue="Application.RandomNums" />
         <item itemvalue="Application.StreamCreaed" />
         <item itemvalue="Application.RemoveDuplicatesBySortArray" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.PrimeNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -527,7 +524,9 @@
       <workItem from="1724075889134" duration="2923000" />
       <workItem from="1724160927517" duration="2383000" />
       <workItem from="1727710091421" duration="911000" />
-      <workItem from="1731940677204" duration="1145000" />
+      <workItem from="1731940677204" duration="1426000" />
+      <workItem from="1736347066497" duration="323000" />
+      <workItem from="1736347930183" duration="256000" />
     </task>
     <task id="LOCAL-00060" summary="二叉排序树删除节点注意实现">
       <created>1583163124296</created>
@@ -872,7 +871,7 @@
       <option name="project" value="LOCAL" />
       <updated>1659112899768</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TodoView">
@@ -932,7 +931,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="双指针算法&amp;二分查找计算数组中两数和为target的元素下标" />
     <MESSAGE value="三种方式计算斐波拉契数列" />
     <MESSAGE value="三种方式计算硬币排列" />
     <MESSAGE value="两种方式判断环形链表是否存在环" />
@@ -957,6 +955,7 @@
     <MESSAGE value="添加git忽略文件" />
     <MESSAGE value="秒懂算法-1" />
     <MESSAGE value="创建流" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建流" />
+    <MESSAGE value="default file" />
+    <option name="LAST_COMMIT_MESSAGE" value="default file" />
   </component>
 </project>
