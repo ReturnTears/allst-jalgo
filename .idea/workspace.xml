@@ -21,13 +21,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec2d62c6-c05d-4bda-a974-dfa0de7084e7" name="Default" comment="java algo">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/AppSegment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/AppSkipList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/MyCAS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/MySegmentMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/MySkipList.java" afterDir="false" />
+    <list default="true" id="ec2d62c6-c05d-4bda-a974-dfa0de7084e7" name="Default" comment="Java堆内缓存中的常见算法">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/AppRedisson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/MyGuava.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/allst/jvalgo/util/MyMapdb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -532,7 +532,8 @@
       <workItem from="1736347066497" duration="323000" />
       <workItem from="1736347930183" duration="993000" />
       <workItem from="1742824064899" duration="66000" />
-      <workItem from="1742906327703" duration="1793000" />
+      <workItem from="1742906327703" duration="2118000" />
+      <workItem from="1742994444933" duration="578000" />
     </task>
     <task id="LOCAL-00060" summary="二叉排序树删除节点注意实现">
       <created>1583163124296</created>
@@ -877,7 +878,7 @@
       <option name="project" value="LOCAL" />
       <updated>1659112899768</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TodoView">
@@ -937,7 +938,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="三种方式计算硬币排列" />
     <MESSAGE value="两种方式判断环形链表是否存在环" />
     <MESSAGE value="合并有序数组" />
     <MESSAGE value="滑动窗口算法计算子数组最大平均数" />
@@ -962,6 +962,7 @@
     <MESSAGE value="创建流" />
     <MESSAGE value="default file" />
     <MESSAGE value="java algo" />
-    <option name="LAST_COMMIT_MESSAGE" value="java algo" />
+    <MESSAGE value="Java堆内缓存中的常见算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="Java堆内缓存中的常见算法" />
   </component>
 </project>
